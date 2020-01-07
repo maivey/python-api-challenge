@@ -7,8 +7,19 @@ A Python script that visualizes the weather of 500+ cities across the world of v
 ## Prerequisites
 This script requires imports of the following:
 ```code
+import matplotlib.pyplot as plt
 import pandas as pd
-from IPython.display import display, HTML
+import numpy as np
+import requests
+import time
+from pprint import pprint
+import datetime
+from citipy import citipy
+```
+
+Import API key (must obtain an API key from [OpenWeatherMap API](https://openweathermap.org/api))
+```code
+from api_keys import api_key
 ```
 
 ## Summary
